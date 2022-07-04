@@ -24,7 +24,6 @@ export class Router {
       .then(html => {
         document.querySelector('#page').innerHTML = html
         let classChange = pathname.replace(/\//, '')
-        console.log(classChange)
         bodyPage.classList = "";
         bodyPage.classList.add(classChange)
       })
